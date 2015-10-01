@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.sdust.guoqingbirth.MainActivity" >
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ok"
+        android:layout_alignRight="@+id/ok"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:text="12345678901" >
+
+        <requestFocus />
+    </EditText>
+ <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tel"
+        android:layout_marginTop="10dp"
+        android:layout_height="160dp"
+        android:ems="10"
+        android:text="生日快乐!" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tel"
+        android:layout_below="@+id/msg"
+        android:id="@+id/date"
+        android:ems="10"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期 " />
+
+      <EditText
+        android:id="@+id/year"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:numeric="integer"
+        android:text="2015" />
+
+    <EditText
+        android:id="@+id/month"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:numeric="integer"
+        android:text="10" />
+
+    <EditText
+        android:id="@+id/day"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:numeric="integer"
+        android:text="1" />
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:ems="10"
+        android:layout_marginTop="10dp" >
+    <TextView
+            android:id="@+id/tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时刻 " />
+    
+      <EditText
+        android:id="@+id/hour"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:numeric="integer"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:numeric="integer"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/sec"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:numeric="integer"
+        android:text="0" />
+    </LinearLayout>
+       <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="OK" /> 
+</RelativeLayout>
